@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:wght@400;500&family=Ubuntu:wght@500&display=swap');
+
+/* My fonts */
+/* font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+
+/* Navbar */
+
+nav{
+    font-family: 'Roboto',sans-serif !important;
+    font-size: 25px;
+    width: 100%;
+    height: 60px;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0em 1em;
+    background-color: #fff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.071);
+}
+
+nav>h2{
+    font-size: 1em;
+    margin: 0;
+    margin-right: 2em;
+}
+
+nav>ul{
+    font-size: 0.7em;
+    width: 50%;
+    padding: 0 0.4em;
+    align-items: center;
+    margin: 0;
+    /* background-color: black; */
+    /* flex: 1; */
+}
+
+ul>li{
+    list-style: none;
+}
+
+ul>li>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.611);
+}
+
+ul>li.active>a{
+    color: black !important;
+    text-decoration: underline;
+}
+
+ul>li>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* For medium screen */
+
+@media (min-width:599px) and (max-width:900px) {
+    
+    nav>ul{
+        flex: 1;
+    }
+
+    .b-hide{
+        display: none !important;
+    }
+}
+
+
+/* For Big Screen */
+
+@media (min-width:900px) {
+
+    .b-hide{
+        display: none !important;
+    }
+
+}
+
+/* For small screen */
+@media (max-width:598px) {
+    .s-hide{
+        display: none !important;
+    }
+
+    nav{
+        font-size: 15px;
+    }
+
+    ul{
+        padding: 1em;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.179);
+    }
+}
+
