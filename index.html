@@ -19,6 +19,14 @@
     <!-- Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
     
+
+    <!-- Owl Carosel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <!-- css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <!-- Owl Carosel -->
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,50 +34,135 @@
     <!-- NavBar -->
         <!-- Large Screen -->
     <nav class="d-inline-flex s-hide shadow-sm">
-        <h2>Ganesh Parmar</h2>
+        <h2>
+          <img src="./assests/Images/LogoSample_ByTailorBrands.jpg" alt="">
+        </h2>
 
-        <ul class="d-flex justify-content-between">
+        <ul class="d-flex justify-content-between bg-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Prjects</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">AboutMe</a></li>
+            <li><a class="btn rounded shadow contact-btn" href="#">Contact Me</a></li>
         </ul>
     </nav>
 
-        <!-- Small Screen -->
-        <nav class="navbar navbar-expand-lg navbar-light shadow-sm b-hide">
-            <a class="navbar-brand" href="#">Ganesh Parmar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Prjects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
+    <!-- Small Screen -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm b-hide">
+      <a class="navbar-brand" href="#">
+        <img src="./assests/Images/logo.jpg" width="40" alt="" srcset="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prjects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- My Intro -->
+
+    <div class="conatiner welcome">
+      <div class="wrapper">
+        <h1>Hello,</h1>
+        <h3>I am <span class="highlight"><span class="highlight">G</span>anesh</span></h3>
+        <p>Web Developer</p>
+      </div>
+      <div class="contactMe">
+        <a href="#" class="btn shadow">Contact Me</a>
+      </div>
+    </div>
+          
+    <!-- My intro End -->
+
+    <!-- My Portfolio Section -->
+
+    <div class="myworks shadow-lg">
+      <div class="work_wrap">
+          <div class="work_header">
+              <h2 class="py-4">My Recent Works</h2>
+          </div>
+          <div class="works p-2">
+            
+            <!-- Project 1 -->
+            <div class="project shadow border rounded">
+              <div class="imgBanner">
+                <div class="owl-carousel owl-theme slider1">
+                    <div class="item">
+                      <img src="./assests/Projects/GraphicDesign/home.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                      <img src="./assests/Projects/GraphicDesign/Screenshot 2022-04-16 140923.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                      <img src="./assests/Projects/GraphicDesign/Screenshot (29).png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                      <img src="./assests/Projects/GraphicDesign/Screenshot (30).png" alt="" srcset="">
+                    </div>
+                  </div>
+                </div>
+              <div class="smallinfo p-2">
+                <h4>Graphic Designer Website</h4>
+                <p>I made this website for my brother.This website contains all his portfolio works.</p>
+                <a href="http://mukeshparmar.great-site.net/" class="btn border rounded">Website</a>
+              </div>
             </div>
-          </nav>
+            
+            <!-- Project 1 -->
+            <div class="project shadow border rounded">
+              <div class="imgBanner">
+                <div class="owl-carousel owl-theme slider2">
+                  <div class="item ">
+                    <img src="./assests/Projects/Wedding/Screenshot 2022-04-16 205328.png" width="100" alt="" srcset="">
+                  </div>
+                  <div class="item">
+                    <img src="./assests/Projects/Wedding/Screenshot 2022-04-16 205422.png" alt="" srcset="">
+                  </div>
+                  <div class="item">
+                    <img src="./assests/Projects/Wedding/Screenshot 2022-04-16 205507.png" alt="" srcset="">
+                  </div>
+                </div>
+              </div>
+              <div class="smallinfo p-2">
+                <h4>Wedding Website</h4>
+                <p>This is the online based website for wedding managing team.</p>
+                <a href="https://ganeshparmar.github.io/Wedding_Website/" class="btn border rounded">Website</a>
+              </div>
+            </div>
+            
+            <!-- Project 1 -->
+            <div class="project shadow border rounded">
+              <div class="imgBanner">
+                <img src="./assests/Images/logo.jpg" class="rounded" alt=""/>
+              </div>
+              <div class="smallinfo p-2">
+                <h4>Ganesh Logo</h4>
+                <p>This is the logo created in online.</p>
+                <a href="#" class="btn border rounded">Website</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
 
-
-
-
-
-
-
+    <!-- My Portfolio Section End -->
 
 
 
