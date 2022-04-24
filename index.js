@@ -2,11 +2,12 @@
 $(document).ready(function() {
   
 
-    $(".slider1").owlCarousel({
+    $(".owl-carousel").owlCarousel({
         items:1,
         loop:true,
         nav:true,
-        autoplay:true,
+        autoplay:false,
+        autoplayTimeout:4000
         // navText : ["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"]
     });
 
@@ -14,7 +15,7 @@ $(document).ready(function() {
         items:1,
         loop:true,
         nav:true,
-        autoplay:3000
+        autoplay:false
         // navText : ["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"]
     });
 })
